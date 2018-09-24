@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
     ViewControllerTypeAboutUs,
 };
 @interface LXCMainMenuViewController ()<iCarouselDataSource,iCarouselDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet iCarousel *mainView;
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, assign) ViewControllerType currentViewControllerType;
@@ -47,10 +48,9 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
 }
 */
 -(void)setMainView{
-    UIImage * bgimage = [UIImage imageNamed:@"MainBackground"];
-    [_mainView setBackgroundColor:[UIColor clearColor]];
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:bgimage]];
+    _imageView.image = [UIImage imageNamed:@"MainBackground"];
     _currentViewControllerType = 0;
+    [_mainView setBackgroundColor:[UIColor clearColor]];
     _mainView.scrollSpeed = 10;
     _mainView.scrollToItemBoundary = YES;
     _mainView.type = iCarouselTypeCoverFlow;
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
     {
         FXImageView* imageView = [[FXImageView alloc] initWithFrame:CGRectMake(0, 0, 600.f, 300.f) ];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
-        imageView.asynchronous = YES;
+        imageView.asynchronous = NO;//异步 若开启异步则报：应在主线程中运行警告
         imageView.reflectionScale = 0.5f;
         imageView.reflectionAlpha = 0.25f;
         imageView.reflectionGap = 10.0f;

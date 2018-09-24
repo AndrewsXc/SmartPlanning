@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tku-bh-kBa">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -30,12 +30,12 @@
         <scene sceneID="DLU-iS-YiI">
             <objects>
                 <viewController id="zJL-AO-dDA" customClass="LXCMainMenuViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xCa-zV-p8q">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <view key="view" contentMode="scaleToFill" id="xCa-zV-p8q" customClass="UIImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJz-4I-7aS" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="384" width="1024" height="384"/>
+                                <rect key="frame" x="0.0" y="417" width="1112" height="417"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -50,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qsv-ha-tWJ"/>
                     <connections>
+                        <outlet property="imageView" destination="xCa-zV-p8q" id="ox2-h5-ZXl"/>
                         <outlet property="mainView" destination="QJz-4I-7aS" id="Kpn-I3-F6C"/>
                     </connections>
                 </viewController>
