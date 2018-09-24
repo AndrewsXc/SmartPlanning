@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60F1918B21589526004AFBF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918A21589526004AFBF6 /* AppDelegate.m */; };
+		60F1918B21589526004AFBF6 /* LXCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918A21589526004AFBF6 /* LXCAppDelegate.m */; };
 		60F1918E21589526004AFBF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918D21589526004AFBF6 /* ViewController.m */; };
 		60F1919121589526004AFBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F1918F21589526004AFBF6 /* Main.storyboard */; };
 		60F1919321589527004AFBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F1919221589527004AFBF6 /* Assets.xcassets */; };
@@ -17,8 +17,8 @@
 
 /* Begin PBXFileReference section */
 		60F1918621589526004AFBF6 /* SmartPlanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPlanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		60F1918921589526004AFBF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		60F1918A21589526004AFBF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		60F1918921589526004AFBF6 /* LXCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCAppDelegate.h; sourceTree = "<group>"; };
+		60F1918A21589526004AFBF6 /* LXCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCAppDelegate.m; sourceTree = "<group>"; };
 		60F1918C21589526004AFBF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		60F1918D21589526004AFBF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		60F1919021589526004AFBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,8 +58,7 @@
 		60F1918821589526004AFBF6 /* SmartPlanning */ = {
 			isa = PBXGroup;
 			children = (
-				60F1918921589526004AFBF6 /* AppDelegate.h */,
-				60F1918A21589526004AFBF6 /* AppDelegate.m */,
+				60F1919F21589662004AFBF6 /* MainMenuView */,
 				60F1918C21589526004AFBF6 /* ViewController.h */,
 				60F1918D21589526004AFBF6 /* ViewController.m */,
 				60F1918F21589526004AFBF6 /* Main.storyboard */,
@@ -69,6 +68,15 @@
 				60F1919821589527004AFBF6 /* main.m */,
 			);
 			path = SmartPlanning;
+			sourceTree = "<group>";
+		};
+		60F1919F21589662004AFBF6 /* MainMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				60F1918921589526004AFBF6 /* LXCAppDelegate.h */,
+				60F1918A21589526004AFBF6 /* LXCAppDelegate.m */,
+			);
+			path = MainMenuView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +152,7 @@
 			files = (
 				60F1918E21589526004AFBF6 /* ViewController.m in Sources */,
 				60F1919921589527004AFBF6 /* main.m in Sources */,
-				60F1918B21589526004AFBF6 /* AppDelegate.m in Sources */,
+				60F1918B21589526004AFBF6 /* LXCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
