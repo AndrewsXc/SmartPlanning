@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228194F7F1F8EF688E7BAE76 /* libPods-SmartPlanning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2961317DA9660C92630EBE4 /* libPods-SmartPlanning.a */; };
+		6045770E2158B36900E2288A /* LXCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045770D2158B36900E2288A /* LXCBaseViewController.m */; };
+		604577112158B39500E2288A /* LXCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604577102158B39500E2288A /* LXCMainMenuViewController.m */; };
+		604577132158BDD400E2288A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604577122158BDD300E2288A /* Assets.xcassets */; };
 		60F1918B21589526004AFBF6 /* LXCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918A21589526004AFBF6 /* LXCAppDelegate.m */; };
 		60F1918E21589526004AFBF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918D21589526004AFBF6 /* ViewController.m */; };
 		60F1919121589526004AFBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F1918F21589526004AFBF6 /* Main.storyboard */; };
-		60F1919321589527004AFBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F1919221589527004AFBF6 /* Assets.xcassets */; };
 		60F1919621589527004AFBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F1919421589527004AFBF6 /* LaunchScreen.storyboard */; };
 		60F1919921589527004AFBF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1919821589527004AFBF6 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6045770C2158B36900E2288A /* LXCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCBaseViewController.h; sourceTree = "<group>"; };
+		6045770D2158B36900E2288A /* LXCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCBaseViewController.m; sourceTree = "<group>"; };
+		6045770F2158B39500E2288A /* LXCMainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCMainMenuViewController.h; sourceTree = "<group>"; };
+		604577102158B39500E2288A /* LXCMainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCMainMenuViewController.m; sourceTree = "<group>"; };
+		604577122158BDD300E2288A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F1918621589526004AFBF6 /* SmartPlanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPlanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F1918921589526004AFBF6 /* LXCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCAppDelegate.h; sourceTree = "<group>"; };
 		60F1918A21589526004AFBF6 /* LXCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCAppDelegate.m; sourceTree = "<group>"; };
 		60F1918C21589526004AFBF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		60F1918D21589526004AFBF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		60F1919021589526004AFBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		60F1919221589527004AFBF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F1919521589527004AFBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F1919721589527004AFBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F1919821589527004AFBF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FBCD93F0F445C7317C34BD8 /* Pods-SmartPlanning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPlanning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartPlanning/Pods-SmartPlanning.debug.xcconfig"; sourceTree = "<group>"; };
+		A2961317DA9660C92630EBE4 /* libPods-SmartPlanning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartPlanning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86CA5F5B94CC978C6306891 /* Pods-SmartPlanning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPlanning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartPlanning/Pods-SmartPlanning.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228194F7F1F8EF688E7BAE76 /* libPods-SmartPlanning.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DAB7BDEFCFC69ED7E46CAF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCD93F0F445C7317C34BD8 /* Pods-SmartPlanning.debug.xcconfig */,
+				B86CA5F5B94CC978C6306891 /* Pods-SmartPlanning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60F1917D21589526004AFBF6 = {
 			isa = PBXGroup;
 			children = (
 				60F1918821589526004AFBF6 /* SmartPlanning */,
 				60F1918721589526004AFBF6 /* Products */,
+				0DAB7BDEFCFC69ED7E46CAF6 /* Pods */,
+				A3BE8EF6181471FF27FF91B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,8 +83,7 @@
 				60F1919F21589662004AFBF6 /* MainMenuView */,
 				60F1918C21589526004AFBF6 /* ViewController.h */,
 				60F1918D21589526004AFBF6 /* ViewController.m */,
-				60F1918F21589526004AFBF6 /* Main.storyboard */,
-				60F1919221589527004AFBF6 /* Assets.xcassets */,
+				604577122158BDD300E2288A /* Assets.xcassets */,
 				60F1919421589527004AFBF6 /* LaunchScreen.storyboard */,
 				60F1919721589527004AFBF6 /* Info.plist */,
 				60F1919821589527004AFBF6 /* main.m */,
@@ -73,10 +94,23 @@
 		60F1919F21589662004AFBF6 /* MainMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				60F1918F21589526004AFBF6 /* Main.storyboard */,
 				60F1918921589526004AFBF6 /* LXCAppDelegate.h */,
 				60F1918A21589526004AFBF6 /* LXCAppDelegate.m */,
+				6045770C2158B36900E2288A /* LXCBaseViewController.h */,
+				6045770D2158B36900E2288A /* LXCBaseViewController.m */,
+				6045770F2158B39500E2288A /* LXCMainMenuViewController.h */,
+				604577102158B39500E2288A /* LXCMainMenuViewController.m */,
 			);
 			path = MainMenuView;
+			sourceTree = "<group>";
+		};
+		A3BE8EF6181471FF27FF91B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2961317DA9660C92630EBE4 /* libPods-SmartPlanning.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60F1919C21589527004AFBF6 /* Build configuration list for PBXNativeTarget "SmartPlanning" */;
 			buildPhases = (
+				11E44C96686D38624B94BBBB /* [CP] Check Pods Manifest.lock */,
 				60F1918221589526004AFBF6 /* Sources */,
 				60F1918321589526004AFBF6 /* Frameworks */,
 				60F1918421589526004AFBF6 /* Resources */,
+				2F82AF184E9F1537B2A897B1 /* [CP] Embed Pods Frameworks */,
+				421B3F3008D54D739907DECE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,12 +175,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F1919621589527004AFBF6 /* LaunchScreen.storyboard in Resources */,
-				60F1919321589527004AFBF6 /* Assets.xcassets in Resources */,
+				604577132158BDD400E2288A /* Assets.xcassets in Resources */,
 				60F1919121589526004AFBF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E44C96686D38624B94BBBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F82AF184E9F1537B2A897B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartPlanning/Pods-SmartPlanning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		421B3F3008D54D739907DECE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartPlanning/Pods-SmartPlanning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60F1918221589526004AFBF6 /* Sources */ = {
@@ -153,6 +238,8 @@
 				60F1918E21589526004AFBF6 /* ViewController.m in Sources */,
 				60F1919921589527004AFBF6 /* main.m in Sources */,
 				60F1918B21589526004AFBF6 /* LXCAppDelegate.m in Sources */,
+				604577112158B39500E2288A /* LXCMainMenuViewController.m in Sources */,
+				6045770E2158B36900E2288A /* LXCBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -275,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -284,29 +371,33 @@
 		};
 		60F1919D21589527004AFBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FBCD93F0F445C7317C34BD8 /* Pods-SmartPlanning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP698PD922;
 				INFOPLIST_FILE = SmartPlanning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VGP.SmartPlanning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		60F1919E21589527004AFBF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86CA5F5B94CC978C6306891 /* Pods-SmartPlanning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP698PD922;
 				INFOPLIST_FILE = SmartPlanning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VGP.SmartPlanning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
