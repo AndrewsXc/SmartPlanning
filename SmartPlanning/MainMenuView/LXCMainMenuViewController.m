@@ -19,11 +19,11 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
     ViewControllerTypeDocument,
     ViewControllerTypeAboutUs,
 };
-@interface LXCMainMenuViewController ()<iCarouselDataSource,iCarouselDelegate>
+@interface LXCMainMenuViewController () <iCarouselDataSource,iCarouselDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet iCarousel *mainView;
-@property (nonatomic, strong) NSMutableArray *items;
-@property (nonatomic, assign) ViewControllerType currentViewControllerType;
+@property (weak,   nonatomic) IBOutlet iCarousel *mainView;
+@property (strong, nonatomic) NSMutableArray *items;
+@property (assign, nonatomic) ViewControllerType currentViewControllerType;
 @end
 
 @implementation LXCMainMenuViewController
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
 -(void)setMainView{
     _imageView.image = [UIImage imageNamed:@"MainBackground"];
     _currentViewControllerType = 0;
-    [_mainView setBackgroundColor:[UIColor clearColor]];
+    _mainView.backgroundColor = [UIColor clearColor];
     _mainView.scrollSpeed = 10;
     _mainView.scrollToItemBoundary = YES;
     _mainView.type = iCarouselTypeCoverFlow;
