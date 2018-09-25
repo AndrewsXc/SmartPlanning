@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import <iCarousel.h>
+#import <FXImageView.h>
 @interface LXCBaseViewController : ViewController
 
 @end

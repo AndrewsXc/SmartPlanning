@@ -52,11 +52,54 @@
                     <connections>
                         <outlet property="imageView" destination="xCa-zV-p8q" id="ox2-h5-ZXl"/>
                         <outlet property="mainView" destination="QJz-4I-7aS" id="Kpn-I3-F6C"/>
+                        <segue destination="4Qz-h6-zym" kind="show" identifier="toCityOverview" id="HiV-a1-ttl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6W1-xa-ii8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86" y="-132"/>
+        </scene>
+        <!--City Overview View Controller-->
+        <scene sceneID="6Oj-et-smq">
+            <objects>
+                <viewController id="4Qz-h6-zym" customClass="LXCCityOverviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6y3-D4-DAl" customClass="UIImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aB-f9-S1F" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="417" width="1112" height="417"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oC-9m-UF5">
+                                <rect key="frame" x="0.0" y="734" width="1112" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.99718631550000003" blue="0.9857214111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1aB-f9-S1F" firstAttribute="firstBaseline" secondItem="6y3-D4-DAl" secondAttribute="centerY" id="H9y-Cr-r8D"/>
+                            <constraint firstItem="Rwd-AH-1rt" firstAttribute="bottom" secondItem="1aB-f9-S1F" secondAttribute="bottom" id="LZm-XG-6jb"/>
+                            <constraint firstAttribute="centerX" secondItem="1aB-f9-S1F" secondAttribute="centerX" id="S3N-dE-cI5"/>
+                            <constraint firstItem="Rwd-AH-1rt" firstAttribute="bottom" secondItem="2oC-9m-UF5" secondAttribute="bottom" constant="70" id="ZWa-2M-Oip"/>
+                            <constraint firstItem="2oC-9m-UF5" firstAttribute="leading" secondItem="Rwd-AH-1rt" secondAttribute="leading" id="cJp-5k-803"/>
+                            <constraint firstItem="2oC-9m-UF5" firstAttribute="centerX" secondItem="Rwd-AH-1rt" secondAttribute="centerX" id="if7-1V-BK9"/>
+                            <constraint firstItem="1aB-f9-S1F" firstAttribute="leading" secondItem="Rwd-AH-1rt" secondAttribute="leading" id="rgC-Iy-tbU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rwd-AH-1rt"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageInfo" destination="2oC-9m-UF5" id="R3D-x2-aDI"/>
+                        <outlet property="backgroundImageView" destination="6y3-D4-DAl" id="Ysy-7u-5hk"/>
+                        <outlet property="imageListView" destination="1aB-f9-S1F" id="e5r-op-vi8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvH-ES-UEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="-132"/>
         </scene>
     </scenes>
 </document>

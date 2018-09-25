@@ -7,8 +7,7 @@
 //
 
 #import "LXCMainMenuViewController.h"
-#import <iCarousel.h>
-#import <FXImageView.h>
+
 typedef NS_ENUM(NSInteger, ViewControllerType)
 {
     ViewControllerTypeCityOverView      = 0,
