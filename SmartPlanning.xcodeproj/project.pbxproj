@@ -12,8 +12,8 @@
 		604577112158B39500E2288A /* LXCMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604577102158B39500E2288A /* LXCMainMenuViewController.m */; };
 		604577132158BDD400E2288A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604577122158BDD300E2288A /* Assets.xcassets */; };
 		60457717215A75B200E2288A /* LXCCityOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60457716215A75B200E2288A /* LXCCityOverviewViewController.m */; };
+		6045771B215B83FA00E2288A /* LXCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045771A215B83FA00E2288A /* LXCMedia.m */; };
 		60F1918B21589526004AFBF6 /* LXCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918A21589526004AFBF6 /* LXCAppDelegate.m */; };
-		60F1918E21589526004AFBF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1918D21589526004AFBF6 /* ViewController.m */; };
 		60F1919121589526004AFBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F1918F21589526004AFBF6 /* Main.storyboard */; };
 		60F1919621589527004AFBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F1919421589527004AFBF6 /* LaunchScreen.storyboard */; };
 		60F1919921589527004AFBF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1919821589527004AFBF6 /* main.m */; };
@@ -27,11 +27,11 @@
 		604577122158BDD300E2288A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60457715215A75B200E2288A /* LXCCityOverviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCCityOverviewViewController.h; sourceTree = "<group>"; };
 		60457716215A75B200E2288A /* LXCCityOverviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCCityOverviewViewController.m; sourceTree = "<group>"; };
+		60457719215B83FA00E2288A /* LXCMedia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCMedia.h; sourceTree = "<group>"; };
+		6045771A215B83FA00E2288A /* LXCMedia.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCMedia.m; sourceTree = "<group>"; };
 		60F1918621589526004AFBF6 /* SmartPlanning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPlanning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F1918921589526004AFBF6 /* LXCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCAppDelegate.h; sourceTree = "<group>"; };
 		60F1918A21589526004AFBF6 /* LXCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCAppDelegate.m; sourceTree = "<group>"; };
-		60F1918C21589526004AFBF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		60F1918D21589526004AFBF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		60F1919021589526004AFBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60F1919521589527004AFBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F1919721589527004AFBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +71,23 @@
 			path = CityOverView;
 			sourceTree = "<group>";
 		};
+		60457718215B83C500E2288A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6045771C215B83FE00E2288A /* LXCMedia */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6045771C215B83FE00E2288A /* LXCMedia */ = {
+			isa = PBXGroup;
+			children = (
+				60457719215B83FA00E2288A /* LXCMedia.h */,
+				6045771A215B83FA00E2288A /* LXCMedia.m */,
+			);
+			path = LXCMedia;
+			sourceTree = "<group>";
+		};
 		60F1917D21589526004AFBF6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +111,7 @@
 			children = (
 				60F1919F21589662004AFBF6 /* MainMenuView */,
 				60457714215A756700E2288A /* CityOverView */,
-				60F1918C21589526004AFBF6 /* ViewController.h */,
-				60F1918D21589526004AFBF6 /* ViewController.m */,
+				60457718215B83C500E2288A /* Models */,
 				604577122158BDD300E2288A /* Assets.xcassets */,
 				60F1919421589527004AFBF6 /* LaunchScreen.storyboard */,
 				60F1919721589527004AFBF6 /* Info.plist */,
@@ -249,8 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				60457717215A75B200E2288A /* LXCCityOverviewViewController.m in Sources */,
-				60F1918E21589526004AFBF6 /* ViewController.m in Sources */,
 				60F1919921589527004AFBF6 /* main.m in Sources */,
+				6045771B215B83FA00E2288A /* LXCMedia.m in Sources */,
 				60F1918B21589526004AFBF6 /* LXCAppDelegate.m in Sources */,
 				604577112158B39500E2288A /* LXCMainMenuViewController.m in Sources */,
 				6045770E2158B36900E2288A /* LXCBaseViewController.m in Sources */,

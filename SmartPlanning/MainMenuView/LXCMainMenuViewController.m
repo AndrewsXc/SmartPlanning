@@ -28,10 +28,14 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
 @implementation LXCMainMenuViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
     [self setMainView];
-}
 
+}
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -50,12 +54,16 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
     _imageView.image = [UIImage imageNamed:@"MainBackground"];
     _currentViewControllerType = 0;
     _mainView.backgroundColor = [UIColor clearColor];
-    _mainView.scrollSpeed = 10;
+    _mainView.scrollSpeed = 1;
     _mainView.scrollToItemBoundary = YES;
     _mainView.type = iCarouselTypeCoverFlow;
     _mainView.dataSource = self;
     _mainView.delegate = self;
    
+//    //LXC 20170629 back to 返回
+//    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+//    backItem.title = @"返回";
+//    self.navigationItem.backBarButtonItem = backItem;
 }
 
 #pragma mark iCarousel
@@ -89,5 +97,14 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
                 @"AboutUs"] mutableCopy];
     return [_items count];
 }
-
+-(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    switch (index) {
+        case 0:
+            [self performSegueWithIdentifier:@"toCityOverview" sender:self];
+            break;
+            
+        default:
+            break;
+    }
+}
 @end

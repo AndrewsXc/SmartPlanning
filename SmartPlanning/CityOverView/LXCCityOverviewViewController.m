@@ -7,21 +7,37 @@
 //
 
 #import "LXCCityOverviewViewController.h"
-
+#import "LXCMedia.h"
 @interface LXCCityOverviewViewController ()
 {
     NSInteger _selectedIndex;
 }
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet iCarousel *imageListView;
-@property (weak, nonatomic) IBOutlet UILabel *ImageInfo;
+@property (weak, nonatomic) IBOutlet UILabel *imageInfo;
 @end
 
 @implementation LXCCityOverviewViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setViewOfCityOverView];
+}
+
+-(void)setViewOfCityOverView{
+    //未采用imageNamed 因为imageName会缓存图片 不常用的大图片建议不要用imageNamed
+    _backgroundImageView.image = [UIImage imageNamed:@"CityoverviewBg"];
+    _imageListView.backgroundColor = [UIColor clearColor];
+    _imageListView.type = iCarouselTypeLinear;
+    _imageListView.dataSource = self;
+    _imageListView.delegate = self;
+    _imageListView.bounceDistance = 0.3;
+    _imageInfo.text=((LXCMedia*)_imagePaths[_imageListView.currentItemIndex]).title;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +47,7 @@
 
 #pragma mark - iCarousel的委托方法
 -(NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel{
+    _imagePaths = [LXCMedia getMediasCityOverviewSceneDir];
     return _imagePaths.count;
 }
 -(UIView*)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view{
@@ -43,13 +60,28 @@
         imageView.reflectionAlpha = 0.25f;
         imageView.reflectionGap = 3.0f;
         imageView.cornerRadius = 4.0f;
+        
+        LXCMedia*im = _imagePaths[index];
+        imageView.image = [UIImage imageWithContentsOfFile:im.path];
+    
+        if (imageView.image.size.height < imageView.image.size.width)
+        {
+            imageView.frame = CGRectMake(0.,(250.- 250.*imageView.image.size.height/imageView.image.size.width)/2.-30, 250., 250.);
+        }
+        else
+        {
+            imageView.frame = CGRectMake(0.,-30, 250., 250.);
+        }
         view = imageView;
     }
-//    UIImage *image=[UIImage imageNamed:_items[index]];
-//    [view setValue:image forKey:@"image"];
+  
+
     return view;
 }
-
+-(void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel
+{
+    _imageInfo.text=((LXCMedia*)_imagePaths[_imageListView.currentItemIndex]).title;
+}
 /*
 #pragma mark - Navigation
 
