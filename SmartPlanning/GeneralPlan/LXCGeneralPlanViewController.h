@@ -8,6 +8,6 @@
 
 #import "LXCBaseViewController.h"
 
-@interface LXCGeneralPlanViewController : LXCBaseViewController
+@interface LXCGeneralPlanViewController : LXCBaseViewController<iCarouselDelegate,iCarouselDataSource>
 
 @end

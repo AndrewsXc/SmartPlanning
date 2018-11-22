@@ -53,6 +53,7 @@
                         <outlet property="imageView" destination="xCa-zV-p8q" id="ox2-h5-ZXl"/>
                         <outlet property="mainView" destination="QJz-4I-7aS" id="Kpn-I3-F6C"/>
                         <segue destination="4Qz-h6-zym" kind="show" identifier="toCityOverview" id="HiV-a1-ttl"/>
+                        <segue destination="uMw-fV-BuI" kind="show" identifier="toGeneralPlan" id="kGZ-sZ-XGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6W1-xa-ii8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,7 +100,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GvH-ES-UEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872" y="-132"/>
+            <point key="canvasLocation" x="888" y="-1653"/>
+        </scene>
+        <!--General Plan View Controller-->
+        <scene sceneID="4UX-uc-aBl">
+            <objects>
+                <viewController id="uMw-fV-BuI" customClass="LXCGeneralPlanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPO-MF-VZq" customClass="UIImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3g-IT-FOu" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="417" width="1112" height="417"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTg-Wj-kUc">
+                                <rect key="frame" x="0.0" y="792" width="1112" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.99718631550000003" blue="0.9857214111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="biO-u8-gIg">
+                                <rect key="frame" x="536" y="407" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ScC-Yd-LGB"/>
+                                    <constraint firstAttribute="width" constant="40" id="kDg-Vg-olf"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j3g-IT-FOu" firstAttribute="leading" secondItem="tpg-rA-whi" secondAttribute="leading" id="8YC-ki-8A6"/>
+                            <constraint firstItem="ZTg-Wj-kUc" firstAttribute="leading" secondItem="tpg-rA-whi" secondAttribute="leading" id="DwO-Kh-3Ff"/>
+                            <constraint firstAttribute="centerX" secondItem="j3g-IT-FOu" secondAttribute="centerX" id="N4u-z3-64s"/>
+                            <constraint firstItem="biO-u8-gIg" firstAttribute="centerY" secondItem="tpg-rA-whi" secondAttribute="centerY" id="VaL-9S-c7g"/>
+                            <constraint firstItem="tpg-rA-whi" firstAttribute="bottom" secondItem="ZTg-Wj-kUc" secondAttribute="bottom" constant="12" id="dgg-IV-Ss0"/>
+                            <constraint firstItem="j3g-IT-FOu" firstAttribute="firstBaseline" secondItem="PPO-MF-VZq" secondAttribute="centerY" id="ecs-yl-mRx"/>
+                            <constraint firstItem="biO-u8-gIg" firstAttribute="centerX" secondItem="tpg-rA-whi" secondAttribute="centerX" id="j8y-Rx-o67"/>
+                            <constraint firstItem="tpg-rA-whi" firstAttribute="bottom" secondItem="j3g-IT-FOu" secondAttribute="bottom" id="oEX-FN-12k"/>
+                            <constraint firstItem="ZTg-Wj-kUc" firstAttribute="centerX" secondItem="tpg-rA-whi" secondAttribute="centerX" id="z3E-HP-9Q0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tpg-rA-whi"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="PPO-MF-VZq" id="Mge-r7-Uxd"/>
+                        <outlet property="imageInfo" destination="ZTg-Wj-kUc" id="BTA-ZR-3bu"/>
+                        <outlet property="mainView" destination="j3g-IT-FOu" id="tks-2j-prM"/>
+                        <outlet property="waitSignal" destination="biO-u8-gIg" id="gKR-Gp-TNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12L-hE-s09" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-892"/>
         </scene>
     </scenes>
 </document>

@@ -102,6 +102,10 @@ typedef NS_ENUM(NSInteger, ViewControllerType)
         case 0:
             [self performSegueWithIdentifier:@"toCityOverview" sender:self];
             break;
+           
+        case 1:
+            [self performSegueWithIdentifier:@"toGeneralPlan" sender:self];
+            break;
             
         default:
             break;

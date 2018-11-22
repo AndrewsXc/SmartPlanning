@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXCBigPhotoViewController : UIPageViewController
+@interface LXCBigPhotoViewController : UIPageViewController<UIPageViewControllerDataSource>
+
+@property (nonatomic, copy) NSArray *imagePaths;
+@property (nonatomic, copy) NSString * segueName;
+@property (nonatomic, assign) NSUInteger currentIndex;
 
 @end

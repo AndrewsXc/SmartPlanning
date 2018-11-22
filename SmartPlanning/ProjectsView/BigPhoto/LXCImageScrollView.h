@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXCImageScrollView : UIScrollView
+@interface LXCImageScrollView : UIScrollView<UIScrollViewDelegate>
 
+@property (nonatomic, assign) NSUInteger index;
+@property (nonatomic, copy) NSString* segueName;
+@property (nonatomic, copy) NSArray* imagePaths;
+@property (nonatomic) CGSize imageSize;
+-(NSUInteger)imageCount;
+-(void)setMaxMinZoomScaleForCurrentBounds;
 @end

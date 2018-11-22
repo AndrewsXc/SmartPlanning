@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C73EFACF976AF38A6267156E6E5719FE'
-               BlueprintName = 'FXImageView'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libFXImageView.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5433DFAB074DB99DED294245742D43A0"
+               BlueprintName = "FXImageView"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libFXImageView.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

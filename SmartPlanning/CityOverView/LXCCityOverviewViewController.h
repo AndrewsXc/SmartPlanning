@@ -9,5 +9,4 @@
 #import "LXCBaseViewController.h"
 
 @interface LXCCityOverviewViewController : LXCBaseViewController<iCarouselDelegate, iCarouselDataSource>
-@property (strong, nonatomic) NSArray* imagePaths;
 @end

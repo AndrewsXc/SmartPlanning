@@ -17,51 +17,31 @@
     if(!(self = [super init])){
         return nil;
     }
-    self.index=index;
-    self.title=title;
-    self.type=type;
-    self.path=path;
+    _index=index;
+    _title=title;
+    _type=type;
+    _path=path;
     return self;
 }
 
 //获取文档目录"Library"
 +(NSString*)getDocsDir{
-    NSString *docsDir;
-    NSArray *dirPaths;
-    
+   
     // Get the library directory
-    dirPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    docsDir = [dirPaths objectAtIndex:0];
+    NSArray * dirPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString * docsDir = [dirPaths objectAtIndex:0];
     return [docsDir stringByAppendingPathComponent:@"appdata"];
 }
 // 相对路径转化为设备路径
-+(NSString*)relativeDir2AbsDir:(NSString*)aString;
++(NSString*)relativeDir2AbsDir:(NSString*)aString
 {
     return  [[LXCMedia getDocsDir] stringByAppendingPathComponent:aString];
-}
-
-#pragma CityOverView
-//
-+(NSMutableArray*)getMediasCityOverviewDir{
-//    NSString* cityOverViewPath = @"CityOverview";
-    return [LXCMedia getMediasAtDir:[LXCMedia relativeDir2AbsDir:CityOverview] HasIndex:NO];
-}
-
-+(LXCMedia*)getCityOverviewVideo{
-    NSArray* coutl=[LXCMedia getMediasCityOverviewDir];
-    return [LXCMedia getMediaFromArray:coutl WithTitle:@"mainvideo"];
-}
-
-+(NSMutableArray*)getMediasCityOverviewSceneDir
-{
-    NSArray*coutl=[LXCMedia getMediasCityOverviewDir];
-    return [LXCMedia getMediasAtDir:[LXCMedia getMediaFromArray:coutl WithTitle:@"scenes"].path HasIndex:YES];
 }
 
 +(LXCMedia*)getMediaFromArray:(NSArray*)mediaArray WithTitle:(NSString*)title
 {
     LXCMedia*result;
-    title=[title stringByDeletingPathExtension];
+    title = [title stringByDeletingPathExtension];
     for (result in mediaArray)
     {
         if ([result.title isEqualToString:title]) {
@@ -160,5 +140,15 @@
             }];
     }
     return retArray;
+}
+
+//获取dic media 下的文件目录array
+-(NSMutableArray*)getMediaHasIndex:(BOOL)hasIndex
+{
+    if (self.type!=DIC) {
+        NSLog(@"media error:input media is not a directory");
+        return nil;
+    }
+    return [LXCMedia getMediasAtDir:self.path HasIndex:hasIndex];
 }
 @end
